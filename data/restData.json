@@ -1,0 +1,31 @@
+[
+  {
+    "restId":"000001",
+    "restName":"汉堡王",
+    "location":"1.3km",
+    "startPrice":30,
+    "sendCost":2,
+    "sendTime":"40min",
+    "star":5,
+    "bgImg":"images/11111.jpg",
+    "minus":[{"25":"10"},{"35":"12"},{"50":"20"}],
+    "promotion":{"newuser":10},
+    "categories":[
+      {"cateid":"10001","category":"热门商品"},
+      {"cateid":"10002","category":"新品上市"},
+      {"cateid":"10003","category":"招牌汉堡"},
+      {"cateid":"10004","category":"汉堡单品"},
+      {"cateid":"10005","category":"小食饮料"},
+      {"cateid":"10006","category":"汉堡套餐"}
+    ],
+    "menu":[
+      {"name":"培根芝士皇堡","category":["热门商品","新品上市","招牌汉堡"],"price":18,"desc":"整片鲜嫩培根肉，浓郁汉堡酱，香脆鲜嫩多汁。","imgsrc":"images/TB1_50x50.jpg","saleNumToday":30,"saleNumMonth":199,"star":5},
+      {"name":"土豆泥薯格套餐","category":["热门商品","新品上市","汉堡套餐"],"price":32,"desc":"黑椒鸡胸汉堡+土豆泥+薯格","imgsrc":"images/TB2_50x50.jpg","saleNumToday":23,"saleNumMonth":125,"star":4},
+      {"name":"美式脆鸡堡","category":["热门商品","新品上市","招牌汉堡","汉堡单品"],"price":11,"desc":"香脆鸡腿卡蹦脆","imgsrc":"images/TB3_50x50.jpg","saleNumToday":19,"saleNumMonth":112,"star":4},
+      {"name":"皇堡","category":["热门商品","招牌汉堡","汉堡单品"],"price":22,"desc":"皇帝般的享受","imgsrc":"images/TB4_50x50.jpg","saleNumToday":35,"saleNumMonth":132,"star":5},
+      {"name":"洋葱圈","category":["热门商品","新品上市","招牌汉堡","汉堡单品"],"price":12,"desc":"新鲜洋葱辣眼睛","imgsrc":"images/TB1_50x50.jpg","saleNumToday":16,"saleNumMonth":106,"star":4},
+      {"name":"港式奶茶","category":["热门商品","新品上市","小食饮料"],"price":9,"desc":"口口奶香嗲嗲嗲","imgsrc":"images/TB2_50x50.jpg","saleNumToday":25,"saleNumMonth":118,"star":4},
+      {"name":"百事可乐","category":["热门商品","小食饮料"],"price":7,"desc":"少喝碳酸饮料","imgsrc":"images/TB3_50x50.jpg","saleNumToday":18,"saleNumMonth":101,"star":4}
+    ]
+  }
+]

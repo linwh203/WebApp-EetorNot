@@ -1,0 +1,21 @@
+[
+  {
+    "userId":10001,
+    "username":"杨洋",
+    "phone":18099877789,
+    "location":"上海市浦东新区博霞路66号",
+    "order":[
+              {
+                "orderNo":123456,
+                "orderDate":"2016-9-3 11:00",
+                "orderShop":"星巴克",
+                "orderMenu":"星冰乐2杯",
+                "receiver":"杨洋",
+                "phone":18099877789,
+                "location":"上海市浦东新区博霞路66号",
+                "comment":"",
+                "valid":true
+              }
+            ]
+  }
+]

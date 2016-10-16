@@ -1,0 +1,20 @@
+img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    }
+
+#tour-view .slider-pager{bottom:8.2%;}
+
+#tour-view .slider-pager-page{
+    padding:0 2px;margin:0 2px;color:#b0bfbd;
+    opacity: .3}
+
+#tour-view .slider-pager-page.active{opacity:1}
+
+#tour-view .enter{
+    width:125px;height:30px;display:block;border:1px solid transparent;border-radius: 14px;
+    background-color:transparent;
+    position: absolute;top:82%;left:32%;
+    z-index: 1000;}
+

@@ -1,0 +1,15 @@
+<ion-view id="location">
+    <div class="bar bar-header">
+        <a class="button button-icon ion-ios-arrow-back back" ui-sref="me" nav-direction="back"></a>
+        <h1 class="title">收货地址</h1>
+        <a class="button button-clear">More</a>
+    </div>
+    <div class="list has-header">
+        <a class="item item-icon-right" href="javascript:;" ng-repeat="location in locationList">
+            <h4>{{location.name}} {{location.gender}} {{location.phonenum}}</h4>
+            <p>{{location.location}}</p>
+            <i class="icon edit"></i>
+        </a>
+
+    </div>
+</ion-view>

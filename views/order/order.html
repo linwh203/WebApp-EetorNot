@@ -1,0 +1,59 @@
+<ion-view title="分类" id="order" >
+    <ion-nav-title class="_whiteFont _title _lineheight44 _title">
+            <img src="images/order/icon_location.png" class="_title_icon"/>
+            火星时代
+    </ion-nav-title>
+    <div class="bar bar-subheader" style="background: none;padding:0;height:35px;text-align: center;line-height: 35px;">
+        <div style="width:50%;float:left;border-right:1px solid #d6d6d6">排序<i class="ion-ios-arrow-down" style="font-size: 14px;margin-left:5px;color:#666"></i></div>
+        <div style="width:50%;float:left;">筛选<i class="ion-ios-arrow-down" style="font-size: 14px;margin-left:5px;color:#666"></i></div>
+    </div>
+
+    <!--<ion-content class="has-subheader _lightGray" style="top:79px;width:30px;right:0px;left:auto">-->
+        <!--这里是分类-->
+    <!--</ion-content>-->
+    <ion-content class="has-subheader _lightGray" style="top:79px;" scroll="false">
+        <ion-scroll style="float:left;margin-top:1px;width:22%;height:100%;background: #fff;text-align: center" has-bouncing="true">
+            <ion-list>
+                <ion-item class="_order_left_tab _text" ng-class="{true: '_darkOrangeFont', false: ''}[isSelected(0)]" ng-click="changeNum(0)">全部商家</ion-item>
+                <ion-item class="_order_left_tab _text" ng-class="{true: '_darkOrangeFont', false: ''}[isSelected(1)]" ng-click="changeNum(1)">热门商家</ion-item>
+                <ion-item class="_order_left_tab _text" ng-class="{true: '_darkOrangeFont', false: ''}[isSelected(2)]" ng-click="changeNum(2)">正餐</ion-item>
+                <ion-item class="_order_left_tab _text" ng-class="{true: '_darkOrangeFont', false: ''}[isSelected(3)]" ng-click="changeNum(3)">西餐</ion-item>
+                <ion-item class="_order_left_tab _text" ng-class="{true: '_darkOrangeFont', false: ''}[isSelected(4)]" ng-click="changeNum(4)">快餐小吃</ion-item>
+                <ion-item class="_order_left_tab _text" ng-class="{true: '_darkOrangeFont', false: ''}[isSelected(5)]" ng-click="changeNum(5)">早餐</ion-item>
+                <ion-item class="_order_left_tab _text" ng-class="{true: '_darkOrangeFont', false: ''}[isSelected(6)]" ng-click="changeNum(6)">甜品饮料</ion-item>
+                <ion-item class="_order_left_tab _text" ng-class="{true: '_darkOrangeFont', false: ''}[isSelected(7)]" ng-click="changeNum(7)">超市</ion-item>
+                <ion-item class="_order_left_tab _text" ng-class="{true: '_darkOrangeFont', false: ''}[isSelected(8)]" ng-click="changeNum(8)">夜宵</ion-item>
+                <ion-item class="_order_left_tab _text" ng-class="{true: '_darkOrangeFont', false: ''}[isSelected(9)]" ng-click="changeNum(9)">果蔬生鲜</ion-item>
+            </ion-list>
+        </ion-scroll>
+        <ion-scroll style="float:right;margin-top:9px;width:76%;height:100%;background:none;text-align: center" has-bouncing="true">
+            <ion-list style="text-align: left">
+
+                <ion-item class="item" style="border-top:none;padding:7px 0;background: #fff;margin-bottom:17px;"
+                            ng-repeat="res in data.res | type:typeNum:data.res "
+                            ng-click="toBusniness(res)">
+                    <img class="_leftImg" ng-src="{{res.bgImg}}" style="width:24%; height:17%;max-width:none;max-height:none;border:1px solid #dedede;display: block;float: left;margin-left:2.78%;">
+                    <div style="float:right;width:70%;">
+                        <h2 class="_res_name _darkFont32">{{res.restName}}</h2>
+                        <div class="_star">
+                            <img src="images/star_orange.png" class="_starImg" ng-repeat="star in showStar(res.star)">
+                            <span class="_describe _xiaoliang _darkFont111">月售{{sellNum(res.menu)}}单</span>
+                        </div>
+                        <p class="_describe _deliverFee _darkFont111">¥{{res.startPrice}}起送<span>|</span>配送费 ¥{{res.sendCost}}</p>
+                        <p class="_describe _youhui _darkFont111"><img src="images/minus.png" style="width:11px;height:11px;position: relative;top:1px;">
+                            满{{res.minus[0][0]}}减{{res.minus[0][1]}};满{{res.minus[1][0]}}减{{res.minus[1][1]}};满{{res.minus[2][0]}}减{{res.minus[2][1]}}
+                        </p>
+                        <p class="_describe _youhui _darkFont111"><img src="images/ticket.png" style="width:11px;height:11px;position: relative;top:1px;">新用户下单立减{{res.promotion.newuser}}元</p>
+                        <div class="loca">
+                            <p class="_describe _darkFont111 _distance">{{res.location}}</p>
+                            <p class="_describe _orangeFont _time">{{res.sendTime}}分钟</p>
+                        </div>
+                    </div>
+                </ion-item>
+
+
+            </ion-list>
+        </ion-scroll>
+    </ion-content>
+
+</ion-view>

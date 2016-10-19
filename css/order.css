@@ -1,0 +1,33 @@
+
+._order_left_tab{height:43px;line-height:43px;width:100%;padding:0;margin:0;border:none;overflow:visible;border-bottom: 1px solid #ddd}
+
+/*.list .title{*/
+    /*height: 35px;line-height: 35px;margin-bottom:0;*/
+    /*padding-left: 27px;font-size:12px;color:#323232;*/
+    /*position: relative;}*/
+/*._leftImg{  width: 19px;  height: 17px;*/
+    /*float: left;margin-top:9px;margin-right:8px;}*/
+/*!*.list .title i{*!*/
+    /*!*position: absolute;right:16px;font-size:20px;}*!*/
+/*._item{  height: 124px;  position: relative;}*/
+/*.list .item img{  width: 69px;  height: 48px;border:1px solid #dedede;left:27px;  top: 12px;}*/
+
+#order p{margin:0;}
+#order ._star{  line-height:14px; padding:2px 0;overflow: hidden;}
+#order ._starImg{border:none;  width: 15px;  height: 15px;  float: left;padding-right:1px;}
+#order ._xiaoliang{  font-size: 12px;  padding-left:2px;float:left;}
+#order ._res_name{font-size: 14px;margin-bottom: 0;line-height: 14px;font-weight: 600;padding-bottom: 2px;}
+#order ._deliverFee{line-height: 23px;width:100%;  border-bottom:1px solid #ededed;  margin-bottom:3px;color:#323232;}
+#order ._deliverFee span{color:#d6d6d6;padding:0 4px;display:inline-block;-webkit-transform-origin-x:0;-webkit-transform: scale(0.8)}
+#order ._youhui{  line-height:14px;padding-top:4px;}
+#order ._youhui img{margin-right:4px;}
+/*.list .item h4 img,.list .item h5 img{border:none;  width: 17px;  height: 17px;  float: left;  margin-right:5px;}*/
+/*.list .item h5{ font-size: 10px;}*/
+/*.list .item .orange{color:#ff9739;}*/
+#order .loca{  position: absolute;top:23px;right:0px;
+    font-size:10px;
+    width: 44px;
+    height: 25px;}
+#order ._distance{line-height:18px;}
+#order ._time{-webkit-transform-origin-x:0;-webkit-transform: scale(0.9)}
+/*.list .item .loca p{border:none;}*/

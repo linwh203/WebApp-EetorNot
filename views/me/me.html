@@ -1,8 +1,14 @@
-<ion-view id="myPage">
-    <ion-content class="_lightGray">
+<ion-view id="myPage" hide-nav-bar="true">
+    <ion-content class="_lightGray" has-bouncing="false">
         <div class="head">
-            <div class="top"><a href="javascript:;" class="alarm"><img src="images/me/alarmicon.png"></a>我<a href="javascript:;" class="set"><img src="images/me/seticon.png"></a></div>
-            <div class="login"><img ng-src="{{loginPic}}"><h3 ng-show="Log==false">登陆/注册</h3><h3 ng-show="Log==true">{{userdata.name}} <i class="icon ion-ios-arrow-forward"></i></h3><p class="small-font" ng-show="Log==true"><i class="icon ion-iphone"></i>{{userdata.phone}}</p></div>
+            <div class="top"><a href="javascript:;" class="alarm"><img src="images/me/alarmicon.png"></a>我<a href="#/setting"  nav-direction="forward" class="set"><img src="images/me/seticon.png"></a></div>
+            <a class="login" href="#/userInfo" style="display:block" nav-direction="forward">
+                <img ng-src="{{loginPic}}">
+                <h3 ng-show="Log==false">登陆/注册</h3>
+                <h3 ng-show="Log==true">{{userdata.name}} </h3>
+                <p class="small-font" ng-show="Log==true"><i class="iconphone ion-iphone"></i>{{userdata.phone}}</p>
+                <i class="icon ion-ios-arrow-forward"></i>
+            </a>
         </div>
         <div class="mid">
             <a href="javascript:;"><img src="images/me/kubon.png">商券0张</a><span></span><a href="javascript:;"><img src="images/me/redbag.png">红包0个</a><span></span><a href="javascript:;"><img src="images/me/point.png">积分0分</a>
@@ -10,20 +16,20 @@
 
         <div class="list">
 
-            <a class="item item-icon-left item-icon-right" ui-sref="location" nav-direction="forward">
-                <i class="icon location"></i>
+            <a class="item item-icon-left item-icon-right" href="#/location" nav-direction="forward">
+                <i class="icon iconleft location"></i>
                 收货地址
                 <i class="icon ion-ios-arrow-forward"  ng-show="Log==true"></i>
             </a>
 
             <a class="item item-icon-left item-icon-right" href="javascript:;">
-                <i class="icon collection"></i>
+                <i class="icon iconleft collection"></i>
                 收藏
                 <i class="icon ion-ios-arrow-forward" ng-show="Log==true"></i>
             </a>
 
-            <a class="item item-icon-left item-icon-right" ui-sref="member" nav-direction="forward">
-                <i class="icon crown"></i>
+            <a class="item item-icon-left item-icon-right" href="#/member" nav-direction="forward">
+                <i class="icon iconleft crown"></i>
                 会员/积分商城
                 <i class="icon ion-ios-arrow-forward" ng-show="Log==true"></i>
             </a>

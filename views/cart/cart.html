@@ -1,0 +1,80 @@
+<ion-view id="shopcar" hide-nav-bar="true" style="background-color: #ededed;" class="shopcarContent">
+
+    <div class="bar bar-header">
+        <h1 class="title">购物车({{cartList.length}})</h1>
+        <a class="button button-clear _title" style="color:#f6c9c2">清空</a>
+    </div>
+    <ion-content class="has-header has-footer" style="top:43px">
+        <ion-list>
+
+            <div class="list">
+                <ul class="item item-icon-right" ng-repeat="list in cartList">
+                    <li class="shopTitle" >
+                        <label class="checkbox checkbox-gray">
+                            <input type="checkbox" value="{{list.name}}" ng-model="list.checked" ng-checked="list.checked" ng-change="selectAllMenu(list)">
+                        </label>
+                        <div class="shopicon"><img ng-src="{{list.imgSrc}}"></div>
+                        <h4 class="_textTitle">{{list.name}} <span class="_text">再去逛逛</span><i class="icon ion-ios-arrow-forward _title"></i></h4>
+                    </li>
+                    <li class="itemList" ng-repeat="menu in list.menu">
+                        <ion-item>
+                            <label class="checkbox checkbox-gray">
+                                <input type="checkbox" value="{{menu.menuName}}" ng-model="menu.checked" ng-checked="menu.checked" ng-change="selectMenu(list)">
+                            </label>
+                            <div class="menupic"><img ng-src="{{menu.menuSrc}}"></div>
+                            <div class="text">
+                                <h3>{{menu.menuName}}</h3>
+                                <div class="star"><a ng-repeat="star in showStar(menu.star)"><img src="images/star_orange.png"></a></div>
+                                <p class="small-font">销量{{menu.sellNum}}件</p>
+                                <h5 style="color:#f74225">¥{{menu.price}}</h5>
+                            </div>
+                            <div class="count">
+                                <i class="icon ion-ios-arrow-back minus" ng-click="down(menu)"></i>
+                                <span class="small-font">{{menu.count}}</span>
+                                <i class="icon ion-ios-arrow-forward plus" ng-click="up(menu)"></i>
+                            </div>
+                            <ion-option-button class="button _orange font-white" ng-click="remove(list,menu)">删除</ion-option-button>
+                        </ion-item>
+                    </li>
+                </ul>
+                <!--<ul class="item item-icon-right">
+                    <li class="shopTitle">
+                        <label class="checkbox checkbox-gray">
+                            <input type="checkbox" value="沙县小吃">
+                        </label>
+                        <div class="shopicon"><img src="images/shopcar/shaxianicon.png"></div>
+                        <h4 class="_textTitle">沙县小吃 <span class="_text">再去逛逛</span><i class="icon ion-ios-arrow-forward _title"></i></h4>
+                    </li>
+                    <li class="itemList">
+                        <ion-item>
+                            <label class="checkbox checkbox-gray">
+                                <input type="checkbox" value="肯德基">
+                            </label>
+                            <div class="menupic"><img src="images/shopcar/shaxianmian.jpg"></div>
+                            <div class="text">
+                                <h3>肉末汤面</h3>
+                                <div class="star"><a><img src="images/star_orange.png"></a><a><img src="images/star_orange.png"></a><a><img src="images/star_orange.png"></a><a><img src="images/star_orange.png"></a><a><img src="images/star_grey.png"></a></div>
+                                <p class="small-font">销量25件</p>
+                                <h5 style="color:#f74225">¥15</h5>
+                            </div>
+                            <div class="count">
+                                <i class="icon ion-ios-arrow-back minus"></i>
+                                <span class="small-font">1</span>
+                                <i class="icon ion-ios-arrow-forward plus"></i>
+                            </div>
+                            <ion-option-button class="button green font-white">编辑</ion-option-button>
+                            <ion-option-button class="button _orange font-white">删除</ion-option-button>
+                        </ion-item>
+                    </li>
+                </ul>-->
+            </div>
+
+        </ion-list>
+    </ion-content>
+    <div class="gopay has-tabs">
+        <label class="checkbox checkbox-gray">
+            <input type="checkbox" value="selectAll" ng-model="all" ng-change="allchecked()">
+        </label>
+        <h4 class="_size2">全选  <a class="pay">去结算</a> <span class="_text">合计：<a>¥{{total()}}</a></span></h4>
+    </div>
+</ion-view>

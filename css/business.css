@@ -1,0 +1,95 @@
+#business ._img{
+    width: 100%;
+    display: block;
+}
+
+#business .head{
+    height: 44px;text-align: center;
+    width: 100%;background:transparent;
+    position: fixed;color:#fff;
+    line-height:44px;z-index: 1;
+    padding-top: 0px;font-size: 17px;
+    background: rgba(0,0,0,.7);
+    top:0;
+    left:0;
+
+}
+#business .head ._button{  display: block;font-size:24px;color:#fff; position: absolute;height:25px;top:10px;line-height:0px}
+#business .head ._button img{  display: block}
+#business .head ._button._left{left:15px;}
+#business .head ._button._right{right:15px;}
+
+
+#business ._slideX{background: #fff;line-height: 39px;padding-left:10px;overflow: visible;box-shadow: rgba(0,0,0,.2) 2px 1px 4px 1px inset;width:100%;}
+#business ._slideX p{height:39px;margin-bottom:0px;position: relative;top:0;left:0;}
+#business ._slideX i{padding:0 4px;}
+
+#business ._list{margin-top: 5px}
+#business ._item{padding:17px 0;padding-left: 7%;padding-right: 2.5%;margin-bottom: 10px;border:none;box-shadow:rgba(0,0,0,.2) 0px 0px 4px 0px inset}
+
+#business ._leftPic{display: block;width: 24%;height: 24%;border-radius: 50%;float:left;}
+#business ._rightContent{float:right;width:67%;position:relative;padding-bottom:10px;}
+
+#business ._firstRow{line-height:27px;}
+#business ._foodTitle{float:left;}
+#business ._foodMoney{float:right;}
+
+#business ._starRow{overflow: hidden;}
+#business ._starRow img{display: block;float: left;width: 13px;height:13px;margin-right:2px;}
+
+#business ._salesRow{font-size:12px;line-height: 20px;padding-top:3px;}
+#business ._salesRow span{float:left;margin-right:10px;}
+
+#business ._textRow{line-height:17px;white-space:normal;font-size: 11px;width: 80%;}
+
+#business ._btnAdd{width:22px;height:22px;line-height:22px;display: block;text-align:center;border-radius:50%;position:absolute;right:0px;bottom:0px;}
+
+
+#business .foot{
+    height:50px;
+    background: #313131;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    overflow: hidden;
+    line-height:50px;
+}
+
+#business .circle{
+    height:70px;
+    width:70px;
+    border:1px solid #bfbfbf;
+    border-radius: 50%;
+    position:absolute;
+    left:-8px;
+    top:-8px;
+    text-align: center;
+    line-height:70px;
+}
+#business .circle ._cart{
+    display: block;
+    width:30px;
+    height:30px;
+    margin:0 auto;
+    margin-top:20px;
+}
+#business .foot .money{
+    color:#fbfbfb;
+    font-size:12px;
+    float:left;
+    padding-left:70px;
+}
+#business .computedMoney{
+    margin-right:5px;
+}
+
+#business .pay{
+    float:right;
+    border-left:1px solid #616161;
+    width:100px;
+    line-height:50px;
+    text-align: center;
+    color:#f8f8f8;
+    font-size:13px;
+}

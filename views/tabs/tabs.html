@@ -1,0 +1,28 @@
+<ion-view>
+    <ion-tabs  class="tabs-icon-top _tabsBg border">
+        <ion-tab title="首页" icon-on="icon_size icon_home_on" icon-off="icon_size icon_home_off" class="{{color(0)}} _describe" ui-sref="tabs.home">
+            <ion-nav-view name="tab-home"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="分类" icon-on="icon_size icon_order_on" icon-off="icon_size icon_order_off" class="{{color(1)}} _describe" ui-sref="tabs.order">
+            <ion-nav-view name="tab-order"></ion-nav-view>
+            <!--<ion-view>-->
+                <!--<ion-content class="has-header">-->
+                   <!--222 {{select()}}{{select()}}-->
+                <!--</ion-content>-->
+            <!--</ion-view>-->
+        </ion-tab>
+
+        <ion-tab title="购物车" icon-on="icon_size icon_cart_on" icon-off="icon_size icon_cart_off" class="{{color(2)}} _describe" ui-sref="tabs.cart">
+            <ion-nav-view name="tab-cart"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="订单" icon-on="icon_size icon_sort_on" icon-off="icon_size icon_sort_off" class="{{color(3)}} _describe" ui-sref="tabs.sort">
+            <ion-nav-view name="tab-sort"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="我" icon-on="icon_size icon_user_on" icon-off="icon_size icon_user_off" class="{{color(4)}} _describe" ui-sref="tabs.me">
+            <ion-nav-view name="tab-user"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+</ion-view>

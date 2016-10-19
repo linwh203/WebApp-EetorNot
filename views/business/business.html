@@ -1,0 +1,73 @@
+<ion-view hide-nav-bar="true" id="business">
+    <div class="head">
+        <a ng-click="goback()" class="_button ion-ios-arrow-left _left">
+            <!--<i class="ion-ios-arrow-left" style="font-size:24px;color:#fff;"></i>-->
+        </a>
+        <span style="color:white">{{res.restName}}<i class="ion-arrow-down-b"></i></span>
+        <a href="javascript:;" class="_button  _right" nav-direction="forward">
+            <img style="width:25px;height:25px;" src="images/business/icon_menu.png">
+        </a>
+    </div>
+    <ion-content class="_lightGray has-footer" has-bouncing="false">
+        <ion-slide-box show-pager="true" id="tour-view" style="width:100%;overflow: hidden;">
+            <ion-slide ng-repeat="banner in res.banner">
+                <img ng-src="{{banner}}" alt="" class="_img">
+            </ion-slide>
+            <!--<ion-slide>-->
+                <!--<img src="images/business/tour2.jpg" alt="" class="_img">-->
+            <!--</ion-slide>-->
+            <!--<ion-slide>-->
+                <!--<img src="images/business/tour2.jpg" alt="" class="_img">-->
+            <!--</ion-slide>-->
+        </ion-slide-box>
+
+        <ion-scroll class="_slideX _darkFont32" direction="x" >
+            <p id="resNav" style="left:{{navLeft}}px">
+                <span ng-repeat="category in res.categories"><i ng-class="{true: '_darkOrangeFont', false: ''}[isSelected(category)]" ng-click="changeNum(category)">{{category.category}}</i>|</span>
+                <!--<span><i>新品上市</i>|</span>-->
+                <!--<span><i>招牌鸡排</i>|</span>-->
+                <!--<span><i>小吃饮料</i>|</span>-->
+                <!--<span><i>口味选择</i>|</span>-->
+                <!--<span><i>其他选择</i></span>-->
+            </p>
+        </ion-scroll>
+
+        <div class="list _list">
+
+            <div class="item _item" ng-repeat="food in res.menu | category:checked:res['menu'] ">
+                <img ng-src="{{food.imgsrc}}" alt="" class="_leftPic">
+                <div class="_rightContent">
+                    <p class="_firstRow"><span class="_foodTitle _darkFont32 _subTitle">{{food.name}}</span><span class="_foodMoney _darkOrangeFont _size2">￥{{food.price}}</span></p>
+                    <div class="_starRow">
+                        <img src="images/star_orange.png" alt="" ng-repeat="star in showStar(food.star)">
+                        <!--<img src="images/star_orange.png" alt="">-->
+                        <!--<img src="images/star_orange.png" alt="">-->
+                        <!--<img src="images/star_orange.png" alt="">-->
+                        <!--<img src="images/star_orange.png" alt="">-->
+                    </div>
+                    <p class="_salesRow"><span class="_darkFont32">今日销量{{food.saleNumToday}}</span><span class="_darkFont32 _greyFony">月销量{{food.saleNumMonth}}</span></p>
+                    <p class="_textRow _greyFony">{{food.desc}}</p>
+                    <a class="_btnAdd _darkOrange" href="javascript:;"
+                       ng-click="addProduct(food)">
+                        <i class="ion-android-add" style="color:#fff;"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </ion-content>
+
+    <div class="foot">
+        <div class="circle">
+            <img class="_cart" src="images/business/shoppingcart.png" alt="">
+        </div>
+        <div class="money">
+            <span class="computedMoney">共￥{{allCost(res)}}</span>
+            <span class="_describe">配送费{{res.sendCost}}元</span>
+        </div>
+        <a class="pay" href="#/tabs/cart" nav-direction="forward">
+            去结算
+        </a>
+    </div>
+</ion-view>

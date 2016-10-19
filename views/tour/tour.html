@@ -1,13 +1,15 @@
-<ion-slide-box show-pager="true" id="tour-view">
-    <ion-slide >
-        <img src="images/tour/tour1.jpg" alt="">
-    </ion-slide>
-    <ion-slide>
-        <img src="images/tour/tour2.jpg" alt="">
-    </ion-slide>
-    <ion-slide>
-        <img src="images/tour/tour3.jpg" alt="">
-        <!--<button class="enter" ui-sref="home"></button>-->
-        <button class="enter" ui-sref="me"></button>
-    </ion-slide>
-</ion-slide-box>
+<ion-view hide-nav-bar="true">
+    <ion-slide-box show-pager="true" id="tour-view">
+        <ion-slide  on-drag ="handMove($event,'left')">
+            {{start}}
+            <img src="images/tour/tour1.jpg" alt="" class="_tour_img">
+        </ion-slide>
+        <ion-slide>
+            <img src="images/tour/tour2.jpg" alt="" class="_tour_img">
+        </ion-slide>
+        <ion-slide on-touch="stopMove()" on-drag="handMove($event,'right')">
+            <img src="images/tour/tour3.jpg" alt="" class="_tour_img">
+            <a class="enter" href="#/tabs/home" nav-direction="forward"></a>
+        </ion-slide>
+    </ion-slide-box>
+</ion-view>

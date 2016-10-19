@@ -1,0 +1,72 @@
+.font-white{color:#fff;}
+.green{background-color:#33d2a9}
+
+#shopcar .bar-header{  background-color: #f74225;  width: 100%;  height: 44px;}
+#shopcar .bar-header h1{line-height: 44px;color:#fff;  height: 44px; }
+
+#shopcar .back{line-height: 44px;color:#fff;  height: 44px; margin-left:9px;
+    padding:0;border:none;}
+
+#shopcar img{  width: 100%;  height: 100%;  display: block;}
+#shopcar .item{padding:0 0 0 15px;
+    background-color: #fff;}
+#shopcar ul{margin-bottom:11px;}
+#shopcar ul span{color:#666;  position: absolute;right:25px;}
+#shopcar ul h4{margin-bottom:0; height: 43px;line-height: 43px;  position: relative;
+    padding-left:87px;
+    background: #fff;}
+
+#shopcar ul .icon{right:2px;color:#7a7a7a;}
+#shopcar .checkbox-gray input{width: 17px;  height: 17px;}
+#shopcar .checkbox-gray input:before{border-color:#c3c3c3 ;}
+#shopcar .checkbox-gray input:checked:before{  background: #c3c3c3;}
+#shopcar .checkbox-gray{  position: absolute; left:15px;padding:10px 0 0 0;  z-index:1;}
+#shopcar .checkbox input:after{top:31% !important;left:20% !important;  width: 11px !important;  height: 4px !important;}
+
+#shopcar .shopicon{  width: 34px;  height: 35px;  position: absolute;left:40px;margin-top:4px;z-index:1;}
+
+#shopcar .itemList{  position: relative;  height: 124px;
+    background-color: #fff;}
+#shopcar .menupic{  width: 90px;  height: 90px;border:1px solid #b6b2b2;
+    position: absolute;left:32px;top:7px;}
+
+#shopcar .star{  height: 15px;}
+#shopcar .star a{  width: 15px;  height: 15px;  display: block;  float: left;}
+#shopcar .count{  height: 12px;line-height: 12px;  width: 60px;  position: absolute;top:17px;right:45px;}
+#shopcar .count .icon{font-size: 16px;}
+#shopcar .count .minus{  position: absolute;left:-12px;  width: 32px;}
+#shopcar .count .plus{  position: absolute;right:-12px;}
+#shopcar .count span{margin:0 auto;}
+#shopcar .itemList .checkbox-gray{left:0;}
+#shopcar .text{
+    position: absolute;left:138px;top:17px;}
+#shopcar .shopTitle{margin-left:-15px;}
+
+#shopcar .item-complex{height:124px;border-left:none;border-right:none;border-bottom:none;padding-left:0}
+#shopcar .item-content{height:124px;}
+#shopcar .gopay{
+    background: #ddd;
+    height: 43px;line-height: 43px;
+    width: 100%;
+    position: absolute;}
+#shopcar .gopay h4{padding-left:40px;margin-top:14px;line-height:21px;}
+#shopcar .gopay h4 span{ float:right;margin-right:10px;}
+#shopcar .gopay h4 span a{color:#f74225}
+#shopcar .gopay .pay{color:#fff;
+    float:right;
+    text-align: center;
+    width: 70px;line-height: 29px;
+    height: 29px;background:#f74225;border-radius: 6px;
+    display:inline-block;
+    position:relative;
+    top:-4px;
+    margin-right:10px;
+}
+#shopcar .gopay .checkbox-gray{padding-top:13px;}
+#shopcar .shopcarContent{
+    position: relative;}
+
+
+
+
+

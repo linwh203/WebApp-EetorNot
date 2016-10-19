@@ -1,0 +1,32 @@
+#userInfo .item{padding:0 0 0 15px;}
+
+#userInfo .touxiang{width: 100%;}
+
+#userInfo .has-header{top:56px;}
+#userInfo ul{margin-bottom:11px;}
+#userInfo ul span{color:#666;  position: absolute;right:25px;}
+#userInfo ul h4{margin-bottom:0; height: 43px;line-height: 43px;  position: relative;}
+
+#userInfo ul .icon{right:2px;color:#c2c2c2;}
+#userInfo ul .pic{  width: 42px;  height: 42px;margin-top:10px;}
+#userInfo .clear h4{  height: 64px;line-height: 65px;}
+#userInfo h3{font-size:12px;  padding-left: 15px;margin-top: 4px;  margin-bottom: 7px;}
+#userInfo .info{padding-left:52px;}
+#userInfo .info li{  position: relative;}
+#userInfo .infoicon{  position: absolute;left:-52px;  width: 51px;  height: 43px;  text-align: center;}
+#userInfo .infoicon img{  width: 21px;  height: 43px; display: block;margin:0 auto;}
+#userInfo .orange-font{color:#f74225;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
